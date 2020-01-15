@@ -1,0 +1,951 @@
+/*Global CSS Start*/
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+.container
+{
+width: 1140px;
+margin: 0 auto; 
+
+
+}
+.container-fluid
+{
+
+	width: 100%;
+}
+
+.col-1
+{
+   width: 8.33%;
+   float: left;
+}
+
+.col-2
+{
+	width: 16.66%;
+	float: left;
+}
+
+.col-3
+{
+	width: 25%;
+	float:left;
+}
+
+.col-4{
+	width: 33.33%;
+	float: left;
+
+}
+
+.col-5
+{
+	width: 41.66%;
+	float:left;
+}
+
+.col-6{
+	width:50%;
+	float: left;
+}
+
+.col-7{
+	width: 58.33%;
+	float: left;
+}
+
+.col-8{
+	width: 66.66%;
+	float:left;
+
+}
+
+.col-9{
+	width: 75%;
+	float: left;
+}
+
+.col-10
+{
+   width: 83.33%;
+   float: left;
+}
+
+.col-11{
+   width: 91.66%;
+   float: left;	
+}
+
+.col-12{
+   width: 100%;
+   float: left;	
+}
+
+.row
+{
+	width: 100%;
+}
+
+
+.text-center
+{
+	text-align: center;
+}
+section
+{
+    float: left;
+	width: 100%;
+	padding: 80px 0;
+}
+
+.purple{
+
+	color: #756aff;
+}
+.black
+{
+	color: #3f3f3f;
+}
+
+.img-fluid{
+	width: 100%;
+}
+
+.highlight
+{
+    text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+h2
+{
+    font-size: 38px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+h3
+{
+	font-size: 25px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.3px;
+    margin-bottom: 20px;
+}
+
+h4
+{
+	font-size: 21px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	color: #7b99fe;
+
+}
+
+h5
+{
+font-size: 18px;
+font-weight: 600;
+letter-spacing: o.3px;
+margin-bottom: 10px;
+
+}
+
+ul li
+{
+
+	list-style: none;
+}
+
+.text-white
+{
+	color: #f7f7f7;
+}
+
+
+/*Global CSS END*/
+
+/*Banner Section CSS*/
+
+
+.banner
+{
+	background: url(../image/banner-bg.png);
+    height: 102vh;
+    background-position: center;
+    background-size: cover;
+   
+}
+.banner .logo
+{
+	margin-top: 20px;
+}
+.banner .navbar
+{}
+.banner .navbar .nav-menu
+{
+	float: right;
+	padding: 20px 0;
+}
+.banner .navbar .nav-menu .nav-item
+{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 2px;
+    
+}
+.banner .navbar .nav-menu .nav-item .nav-link
+{
+	text-decoration: none;
+	color: #d6d6d6;
+	text-transform: uppercase;
+
+}
+.banner .navbar .nav-menu .nav-item .nav-link:hover
+{
+  color:#fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2); 
+}
+
+.banner .navbar .nav-menu .nav-item .nav-link:active
+{
+	transform: translateY(-1px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.banner .submit-btn:link, .submit-btn:visited
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #f7f7f7;
+    display: inline-block;
+    padding: 10px 19px;
+    margin: 10px 5px;
+    border-radius: 100px;
+    border: 1px solid #f7f7f7;
+}
+
+.banner .submit-btn:hover
+{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.banner .submit-btn:active
+{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.banner .hero-area
+{
+	margin-top: 60px;
+}
+.banner .hero-area h1
+{
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+}
+.banner .hero-area p
+{
+    font-size: 17px; 
+    line-height: 1.4;
+    margin-bottom: 40px;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    backface-visibility: hidden;
+}
+
+@keyframes moveInLeft{
+	0%
+	{
+     opacity: 0;
+     transform: translate(-100px);
+	}
+    80%
+    {
+    	transform: translate(20px);
+    }
+	100%
+	{
+     opacity: 1;
+     transform: translate(0);
+	}
+}
+@keyframes moveInRight{
+	0%
+	{
+     opacity: 0;
+     transform: translate(100px);
+	}
+    80%
+    {
+    	transform: translate(-20px);
+    }
+	100%
+	{
+     opacity: 1;
+     transform: translate(0);
+	}
+}
+@keyframes moveInBottom{
+	0%
+	{
+     opacity: 0;
+     transform: translateY(30px);
+	}
+    80%
+    {
+    	transform: translate(-20px);
+    }
+	100%
+	{
+     opacity: 1;
+     transform: translate(0);
+	}
+} 
+
+.banner .hero-area .btn:link, .btn:visited
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px 35px;
+	display: inline-block;
+	border-radius: 100px;
+	transition: all .2s;
+	position: relative;
+	margin-right: 20px;
+	font-weight: 500;
+}
+.banner .hero-area .btn:hover
+{
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.banner .hero-area .btn:active
+{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.banner .hero-area .btn-cta
+{
+	color:#756aff;
+	background: #fff;
+	border: 1px solid #fff;
+}
+
+.banner .hero-area .btn-ghost
+{
+	color:#fff;
+	border: 1px solid #fff;
+}
+
+.banner .hero-area .btn::after
+{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+
+}
+
+.banner .hero-area .btn-cta::after
+{
+	background-color: #fff; 
+}
+.banner .hero-area .btn-ghost::after
+{
+    background-color: #fff;
+   
+}
+
+.banner .hero-area .btn:hover::after
+{
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0; 
+}
+
+.banner .btn-animated
+{
+animation: moveInBottom .5s ease-out .75s;
+animation-fill-mode: backwards;
+
+}
+
+.banner .mockup
+{
+	width: 75%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 16px;
+    margin-right: 14px;
+}
+/*Banner Section CSS End*/
+
+/*About Section CSS Start*/
+
+.about
+{
+	padding: 80px 0;
+}
+.about h2{
+
+	margin-bottom: 30px;
+}
+.about .p-size
+{
+	font-size: 18px;
+	line-height: 1.4;
+}
+.about .feature-box
+{
+	margin-top: 60px;
+}
+.about .feature-box .box
+{
+	margin: 0 10px;
+    border-radius: 3px;
+    padding: 30px 0;
+  
+}
+.about .feature-box .box .feature-img
+{
+	width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.about .feature-box .box .p-size2
+{
+	font-size: 18px;
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+
+.about .feature-box .box .btn-read
+{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+/*About Section CSS End*/
+
+/*Aboutpart Section CSS Start*/
+
+
+.aboutpart
+{
+	background: url(../image/background-bg.png);
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+}
+.aboutpart .mockup2
+{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-top: -7px;
+    margin-left: -51px;
+}
+.aboutpart .right-feature
+{
+	margin-top: 20px;
+    margin-left: 38px;
+}
+
+.aboutpart h2
+{
+margin-bottom: 25px;	
+}
+.aboutpart p
+{
+    font-size: 18px;
+	line-height: 1.4;
+	margin-bottom: 20px;
+	
+}
+.aboutpart .btn:link, .btn:visited
+{
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px 35px;
+	display: inline-block;
+	border-radius: 100px;
+	transition: all .2s;
+	position: relative;
+	margin-right: 20px;
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+.aboutpart .btn:hover
+{
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.aboutpart .btn:active
+{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.aboutpart .btn-cta
+{
+    color:#fff;
+	background: linear-gradient(to right, #19a5fc, #2c8cfd, #3b79fd, #4b62fd, #5a4ffd, #5d4cfd);
+	border: 1px solid #fff;
+}
+
+/*Aboutpart Section CSS End*/
+
+/*Feature Section CSS Start*/
+
+.feature
+{
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5), transparent), url(../image/world-map.png);
+    height: 300px;
+    background-size: cover;
+    background-position:center; 
+}
+.feature .feature-box
+{
+    margin-top: 60px;
+}
+.feature .feature-box .box
+{
+	margin: 0 10px;
+    border-radius: 3px;
+    padding: 30px 0;
+}
+.feature .feature-box .box h2
+{
+    margin-bottom: 5px;
+}
+.feature .feature-box .box h5
+{
+  
+}
+.feature .feature-box .box:hover
+{
+	background: rgba(186, 218, 229, 0.95);
+	border:1px solid rgba(186, 218, 229, 0.95);
+}
+
+/*Feature Section CSS End*/
+
+/*portfolio Section CSS Start*/
+.portfolio
+{
+	padding: 20px 0;
+}
+.portfolio h2
+{
+	margin-bottom: 30px;
+}
+.portfolio .pp1
+{
+	font-size: 18px;
+	line-height: 1.4;
+} 
+
+.portfolio .box
+{
+	border: 2px solid #756aff;
+	border-radius: 100px;
+	margin-top: 60px;
+	height: 50px;
+	width: 60%;
+	margin-left: 229px;
+	margin-bottom: 60px;
+}
+.portfolio .box .navbar
+{}
+.portfolio .box .navbar .nav-menu
+{}
+.portfolio .box .navbar .nav-menu .nav-item
+{
+    list-style: none;
+    padding: 10px 17px;
+    margin: 6px;
+    display: inline-block;
+}
+.portfolio .box .navbar .nav-menu .nav-item .nav-link
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3f3f3f;
+    font-weight: 500;
+}
+.portfolio .box .navbar .nav-menu .nav-item:hover
+{
+	background: #756aff;
+	color:#fff;
+	border-radius: 100px;
+}
+.portfolio-image
+{
+position: relative;
+margin: 10px;
+
+}
+.portfolio .portfolio-image img
+{
+	width: 100%;
+}
+.portfolio .portfolio-image .hover-box 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2bacf7;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+.portfolio .portfolio-image .hover-box ul
+{
+	list-style: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.portfolio .portfolio-image .hover-box ul li
+{
+	display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #fff;
+    margin: 0px 1px;
+    border-radius: 100px;
+    background: rgba(173, 216, 230, 0.16);
+
+
+}
+.portfolio .portfolio-image .hover-box ul li .fa
+{
+	color: #fff;
+}
+
+.portfolio .portfolio-image:hover .hover-box
+{
+    opacity: 0.7; 
+}
+.portfolio .portfolio-image .pp
+{
+    color: #fff;
+    text-transform: uppercase; 
+    position: absolute;
+    top: 75%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+}
+
+/*portfolio Section CSS End*/
+
+
+/*contact-section1 Section CSS Start*/
+.contact-section1
+{
+	background: linear-gradient(to right, rgba(76, 100, 253, 0.7), rgba(47, 136, 252, 0.95), rgb(40, 151, 247)), url(../image/banner-bg2.png);
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    margin-top: 60px;
+}
+.contact-section1 h2
+{
+	margin-bottom: 30px;
+}
+.contact-section1 p
+{
+	font-size: 18px;
+	line-height: 1.4;
+	margin-bottom: 45px;
+}
+
+.contact-section1 form 
+{
+	width: 43%;
+	margin: 0 auto;
+}
+.contact-section1 form .form-control1
+{
+    height: 42px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 0 23px;
+    margin-right: -39px;
+}
+.contact-section1 form .form-control2
+{
+    height: 42px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 0 13px;
+}
+.contact-section1 form .btn-submit
+{
+    text-transform: uppercase;
+    padding: 15px 35px;
+    border-radius: 100px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: -38px;
+    background: linear-gradient(to right, #19a5fc, #2c8cfd, #3b79fd, #4b62fd, #5a4ffd, #5d4cfd);
+    border: 1px solid #4b62fd;
+}
+.contact-section1 form .btn-submit:hover
+{
+	transform: translateY(-3px);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.contact-section1 form .btn-submit::active
+{
+	transform: translateY(-1px);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+
+/*contact-section1 Section CSS End*/
+
+/*review Section CSS Start*/
+.review
+{}
+.review h2
+{
+	margin-bottom: 30px;
+}
+.review .p-size
+{
+	font-size: 18px;
+	margin:0 auto;
+	line-height: 1.4;
+	margin-bottom: 45px;
+}
+.review .feature-box
+{
+	margin-top: 60px;
+}
+.review .feature-box .box
+{
+	margin: 0 10px;
+	border-radius: 3px;
+	padding: 30px 0;
+	box-shadow: 0 3px 1px rgba(0,0,0,0.2);
+}
+.review .box .feature-img
+{
+  	margin: 0 auto;
+  	text-align: center;
+  	line-height: 0px;
+  	margin-bottom: 30px;
+  	margin-top: -31px;
+}
+.review .box .feature-img .logo
+{}
+.review .box .feature-img2
+{
+     margin-top: -157px;
+}
+.review .box h4
+{
+     margin-top: 15px;
+}
+.review .box .feature-img3
+{}
+.review .box ul
+{
+	list-style: none;
+}
+.review .box ul li
+{
+	display: inline-block;
+    margin: 0 1px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: x-large;
+}
+.review .box ul li .fa
+{}
+.review .box .p-size2
+{
+	font-size: 16px;
+    line-height: 1.4;
+}
+
+/*review Section CSS End*/
+
+/*contact-section2 CSS Start*/
+.contact-section2
+{
+	margin-top: -30px;
+    padding: 80px 0;
+}
+.contact-section2 h2
+{
+	margin-bottom: 30px;
+}
+.contact-section2 p
+{
+	font-size: 18px;
+	line-height: 1.4;
+}
+.contact-section2 .feature-box
+{
+	margin-top: 60px;
+}
+.contact-section2 .feature-box .box
+{
+    margin: 0 10px;
+    border-radius: 3px;
+    padding: 30px 0;
+    background: #eef9ff;
+}
+.contact-section2 .feature-box .box .feature-img
+{
+	margin-bottom: 10px;
+}
+
+.contact-section2 .feature-box .box:hover
+{
+	background: rgba(176, 224, 230, 0.42); 
+}
+.contact-section2 form
+{
+	width: 100%;
+	margin: 12px;
+}
+.contact-section2 form .form-control1
+{
+    margin-bottom: 20px;
+    padding: 5px 0;
+    width: 45%;
+    background:#fafafa;
+    border: 1px solid #ebebeb;
+}
+.contact-section2 form .form-control2
+{
+    margin-bottom: 20px;
+    padding: 5px 0;
+    background:#fafafa;
+    width: 45%;
+    border: 1px solid #ebebeb;
+    margin: 0 16px;
+}
+.contact-section2 form .form-control
+{
+    width: 94%;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    background:#fafafa;
+    border: 1px solid #ebebeb;
+}
+.contact-section2 form textarea
+{
+	width: 94%;
+	margin-bottom: 20px;
+	padding: 5px 0;
+	background:#fafafa;
+	border: 1px solid #ebebeb;
+	margin-bottom: 40px;
+}
+.contact-section2 form .btn-submit
+{
+	text-transform: uppercase;
+	text-decoration:none;
+    padding: 10px 56px;
+    border-radius: 100px;
+    font-weight: 500;
+    color: #fff;
+    background: linear-gradient(to right, #19a5fc, #2c8cfd, #3b79fd, #4b62fd, #5a4ffd, #5d4cfd);
+}
+.contact-section2 form .btn-submit:hover
+{
+	transform: translateY(-3px);
+	box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.contact-section2 .mockup
+{
+	width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 16px;
+   
+}
+
+/*contact-section2 CSS End*/
+
+/*Footer Section CSS Start*/
+
+footer
+{
+	padding: 25px 0;
+	width: 100%;
+	float: left;
+	background: #16a9fb;
+}
+footer p
+{
+	margin-top: 12px;
+}
+footer .social-icon
+{
+	float: right;
+}
+footer .social-icon a
+{
+  background: #fff;
+  color: #16a9fb;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: 0.5s ease-in-out;
+} 
+footer .social-icon a:hover
+{
+	border-radius: 0;
+}
+footer .social-icon .fa
+{
+  
+}
+
+/*Footer Section CSS End*/
